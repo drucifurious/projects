@@ -42,6 +42,10 @@ while play == True:
         print('Computer wins!')
 
     play_again = input("Would you like to play again?\n> ")
-    if play_again == "no" or "No" or "NO" or 'n':
+    if play_again == "no":
         play = False
         print("Bye!")
+    elif play_again == "yes":
+        play = True
+    else:
+        print("I don't understand that.")
